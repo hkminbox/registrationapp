@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 09, 2020 at 05:23 PM
+-- Generation Time: Jun 07, 2020 at 10:06 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.6
 
@@ -39,6 +39,13 @@ CREATE TABLE `register` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
+-- Dumping data for table `register`
+--
+
+INSERT INTO `register` (`RegId`, `Name`, `Email`, `Gender`, `Qualification`, `Courses`, `UserName`, `Password`) VALUES
+(1, 'Person1', 'person1@company', 'Male', 'MTech', 'Java,PHP', 'person1', 'Person123');
+
+--
 -- Indexes for dumped tables
 --
 
@@ -56,7 +63,7 @@ ALTER TABLE `register`
 -- AUTO_INCREMENT for table `register`
 --
 ALTER TABLE `register`
-  MODIFY `RegId` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `RegId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
